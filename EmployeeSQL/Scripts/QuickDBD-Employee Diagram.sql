@@ -22,11 +22,11 @@ CREATE TABLE "titles" (
 CREATE TABLE "employees" (
     "emp_no" int   NOT NULL,
     "emp_title_id" varchar   NOT NULL,
-    "birth_date" datetime   NOT NULL,
+    "birth_date" varchar   NOT NULL,
     "first_name" varchar   NOT NULL,
     "last_name" varchar   NOT NULL,
     "sex" varchar(1)   NOT NULL,
-    "hire_date" datetime   NOT NULL,
+    "hire_date" varchar   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
