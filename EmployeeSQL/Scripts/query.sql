@@ -10,8 +10,8 @@ select e.emp_no, e.last_name, e.first_name, e.sex, s.salary
 --employees who were hired in 1986.
 select first_name, last_name, hire_date
   from employees
- where hire_date
-  like '%1986';
+ where extract(YEAR from hire_date) = 1986;
+--  like '%1986';
 
 --List the manager(S) of each department with the following information:
 --department number, department name, the manager's employee number, last name, first name.
